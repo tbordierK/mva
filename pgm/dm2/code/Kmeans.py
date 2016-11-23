@@ -14,7 +14,7 @@ import matplotlib.pyplot as plt
 
 # In[3]:
 
-data = np.loadtxt('../classification_data_HWK2/EMGaussian.data')
+#data = np.loadtxt('../classification_data_HWK2/EMGaussian.data')
 
 
 # In[37]:
@@ -38,18 +38,18 @@ def kmeans(data,n_clusters,n_iterations):
 
 # In[47]:
 
-n_cluster = 5
-assignements ,means  = kmeans(data,n_cluster,100)
+#n_cluster = 5
+#assignements ,means  = kmeans(data,n_cluster,100)
 
 
 # In[48]:
 
-LABEL_COLOR_MAP = {0 : 'r',1 : 'b', 2: 'g',3:'c',4:'m',5:'y',6:'k'}
-colors = [LABEL_COLOR_MAP[k] for k in assignements]
+#LABEL_COLOR_MAP = {0 : 'r',1 : 'b', 2: 'g',3:'c',4:'m',5:'y',6:'k'}
+#colors = [LABEL_COLOR_MAP[k] for k in assignements]
 
-plt.figure()
-plt.scatter(data[:,0],data[:,1],color = colors, marker='+')
-plt.scatter(means[:,0],means[:,1], marker=">")
+#plt.figure()
+#plt.scatter(data[:,0],data[:,1],color = colors, marker='+')
+#plt.scatter(means[:,0],means[:,1], marker=">")
 
 
 # In[ ]:
